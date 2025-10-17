@@ -1,48 +1,106 @@
-
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 0;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
   color: #fff;
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0;
+  margin-bottom: 10px;
+  font-size: 2.5em;
 }
 
-main {
-  flex: 1;
-  padding: 30px;
+.subtitle {
+  font-size: 1.1em;
+  color: #d1d1d1;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #fff;
-  color: #2575fc;
-  border-radius: 8px;
+/* Navigation */
+nav {
+  text-align: center;
+  background: #1b1b2f;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.button:hover {
-  background: #f0f0f0;
+nav a:hover {
+  color: #00d9ff;
 }
 
-footer {
-  background: rgba(0, 0, 0, 0.2);
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #00d9ff;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px auto;
   padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+/* Projects */
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 20px;
+  width: 300px;
+}
+
+.project-card h3 {
+  color: #ffcc00;
+}
+
+/* Contact */
+#contact a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 15px;
   font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  ul li, .project-card {
+    width: 90%;
+  }
 }
