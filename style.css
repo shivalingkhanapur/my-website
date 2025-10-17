@@ -1,106 +1,39 @@
-/* Global Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #2b5876, #4e4376);
-  color: #fff;
   line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Header */
 header {
+  background-color: #007acc;
+  color: white;
+  padding: 20px;
   text-align: center;
-  padding: 50px 20px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  margin-bottom: 10px;
-  font-size: 2.5em;
-}
-
-.subtitle {
-  font-size: 1.1em;
-  color: #d1d1d1;
-}
-
-/* Navigation */
-nav {
-  text-align: center;
-  background: #1b1b2f;
-  padding: 10px;
 }
 
 nav a {
-  color: #fff;
-  margin: 0 15px;
+  margin: 0 10px;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
-nav a:hover {
-  color: #00d9ff;
-}
-
-/* Sections */
 section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-h2 {
-  color: #00d9ff;
-  margin-bottom: 15px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: rgba(255, 255, 255, 0.1);
-  margin: 8px auto;
-  padding: 10px;
-  width: 250px;
+  padding: 20px;
+  background: white;
+  margin: 10px;
   border-radius: 8px;
 }
 
-/* Projects */
-.project-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  margin: 10px auto;
-  padding: 20px;
-  width: 300px;
+h2 {
+  color: #007acc;
 }
 
-.project-card h3 {
-  color: #ffcc00;
-}
-
-/* Contact */
-#contact a {
-  color: #ffcc00;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
 footer {
-  background: rgba(0, 0, 0, 0.3);
+  background-color: #333;
+  color: white;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  ul li, .project-card {
-    width: 90%;
-  }
+  padding: 10px;
 }
