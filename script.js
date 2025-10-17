@@ -1,14 +1,16 @@
-// Show a welcome message when the page loads
+// Show greeting and live time on website
+
+// Greet user on page load
 window.addEventListener("load", function() {
-  alert("🎉 Welcome to My AWS S3 Static Website!");
+  alert("👋 Welcome, Shivaling! Thanks for visiting your static website.");
   updateClock();
-  setInterval(updateClock, 1000); // Update every second
+  setInterval(updateClock, 1000); // update every 1 second
 });
 
-// Function to show the current time on the page
+// Function to update the clock
 function updateClock() {
-  const clockElement = document.getElementById("clock");
+  const clock = document.getElementById("clock");
   const now = new Date();
-  const timeString = now.toLocaleTimeString();
-  clockElement.textContent = "Current Time: " + timeString;
+  const time = now.toLocaleTimeString();
+  clock.textContent = "⏳ Current Time: " + time;
 }
