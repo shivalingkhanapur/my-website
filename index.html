@@ -3,23 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Static Website</title>
+  <title>Welcome | Shivaling’s Static Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <h1>Welcome to My Static Website 🚀</h1>
+    <h1>Welcome to My Website 🌍</h1>
+    <p class="subtitle">Hosted using <strong>GitHub Pages / AWS S3</strong></p>
   </header>
 
-  <main>
-    <p>This website is hosted on <strong>AWS S3 Free Tier</strong>.</p>
-    <p>It’s a simple HTML + CSS website with no backend — just static content!</p>
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <a href="https://aws.amazon.com/s3/" target="_blank" class="button">Learn More About S3</a>
-  </main>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I’m <strong>Shivaling Khanapur</strong> — a passionate learner exploring
+      <b>Cloud, DevOps, Linux, and Web Development</b>.
+    </p>
+    <p>
+      This is my static website built using HTML, CSS, and JavaScript.
+      It’s hosted completely free using cloud technology.
+    </p>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>☁️ Cloud (AWS)</li>
+      <li>🐧 Linux & Shell Scripting</li>
+      <li>⚙️ DevOps Tools (Git, Jenkins, Docker)</li>
+      <li>💻 Web Technologies (HTML, CSS, JS)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>🌐 Static Website Hosting</h3>
+      <p>Deployed a full static website using AWS S3 Free Tier.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🚀 CI/CD Pipeline</h3>
+      <p>Built an automated Jenkins pipeline for deploying web apps.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:shivaling@example.com">shivaling@example.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/shivaling-khanapur" target="_blank">Visit Profile</a></p>
+    <p id="clock">⏳ Current Time: Loading...</p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 MyStaticSite. All rights reserved.</p>
+    <p>© 2025 Shivaling Khanapur | All Rights Reserved</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
